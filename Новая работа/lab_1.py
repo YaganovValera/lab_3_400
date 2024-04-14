@@ -35,7 +35,7 @@ with open("laba_1.txt", "r") as file:
                 current_index += 1
                 file.seek(current_index)
                 continue
-            for index_item in range(3, BUFFER_len):
+            for index_item in range(3, BUFFER_len+1):
                 result = item_file[0:index_item]
                 if set(result).intersection({'2', '3', '4', '5', '6', '7', '8', '9'}):  # проверяем нет ли лишних цифр
                     break
